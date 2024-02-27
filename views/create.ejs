@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootswatch.sketchy.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- start nav bar  -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                    <span class="visually-hidden">(current)</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar  -->
+
+
+    <div class="container">
+        <!-- end form  -->
+        <form action="/store" method="post" class="form-group row">
+            <!-- start col 1  -->
+            <div class="col-6">
+                <div class="form-group has-success">
+                    <label class="form-label mt-4" for="title">Title</label>
+                    <input type="text" value="Title One" name="title" class="form-control is-valid" id="title">
+                    <!-- <div class="valid-feedback">Success! You've done it.</div> -->
+                </div>
+                <div class="form-group has-success">
+                    <label class="form-label mt-4" for="price">Price</label>
+                    <input type="number" value="1.99" name="price" class="form-control is-valid" id="price">
+                    <!-- <div class="valid-feedback">Success! You've done it.</div> -->
+                </div>
+                <div class="form-group has-success">
+                    <label class="form-label mt-4" for="discount_price">Discount Price</label>
+                    <input type="number" value="1.98" name="discount_price" class="form-control is-valid" id="discount_price">
+                    <!-- <div class="valid-feedback">Success! You've done it.</div> -->
+                </div>
+            </div>
+            <!-- end col 1  -->
+
+            <!-- col 2 -->
+            <div class="col-6">
+                <!-- <div class="form-group has-success"> -->
+                    <!-- <label class="form-label mt-4" for="image">Upload Image</label> -->
+                    <!-- <input type="file" value="" class="form-control is-valid" id="image"> -->
+                    <!-- <div class="valid-feedback">Success! You've done it.</div> -->
+                <!-- </div>  -->
+                <div class="form-group has-success">
+                    <label class="form-label mt-4" for="image">Upload Image</label>
+                    <input type="text" value="https://picsum.photos/200/300" name="image" class="form-control is-valid" id="image">
+                    <!-- <div class="valid-feedback">Success! You've done it.</div> -->
+                </div>
+                <div class="form-group has-success">
+                    <label class="form-label mt-4" for="quantity">Quantity</label>
+                    <input type="number" value="1" name="quantity" class="form-control is-valid" id="quantity">
+                    <!-- <div class="valid-feedback">Success! You've done it.</div> -->
+                </div>
+                <div class="form-group has-success">
+                    <label class="form-label mt-4" for="init_price">Init Price</label>
+                    <input type="number" value="1.98" name="init_price" class="form-control is-valid" id="init_price">
+                    <!-- <div class="valid-feedback">Success! You've done it.</div> -->
+                </div>
+            </div>
+            <!-- end col 2 -->
+            <button type="submit" class="btn btn-info my-3">Save</button>
+        </form>
+        <!-- end form  -->
+    </div>
+
+
+
+
+
+    <script src="./js/bootstrap.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
